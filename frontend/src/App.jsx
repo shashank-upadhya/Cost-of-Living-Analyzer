@@ -9,15 +9,15 @@ import {
   X,
 } from 'lucide-react';
 
-import Header from './components/Header';
-import SearchBar from './components/SearchBar';
-import ActiveComparisons from './components/ActiveComparisons';
-import InsightsBanner from './components/InsightsBanner';
-import MetricScorecard from './components/MetricScorecard';
-import HistoricalTrendChart from './components/HistoricalTrendChart';
-import ComparisonBarChart from './components/ComparisonBarChart';
-import CountryCityBreakdown from './components/CountryCityBreakdown';
-import EmptyState from './components/EmptyState';
+import Header from './Components/Header';
+import SearchBar from './Components/SearchBar';
+import ActiveComparisons from './Components/ActiveComparisons';
+import InsightsBanner from './Components/InsightsBanner';
+import MetricScorecard from './Components/MetricScorecard';
+import HistoricalTrendChart from './Components/HistoricalTrendChart';
+import ComparisonBarChart from './Components/ComparisonBarChart';
+import CountryCityBreakdown from './Components/CountryCityBreakdown';
+import EmptyState from './Components/EmptyState';
 
 const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8000';
 

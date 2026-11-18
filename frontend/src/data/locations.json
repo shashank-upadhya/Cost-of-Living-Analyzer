@@ -1,0 +1,2870 @@
+[
+  {
+    "name": "Zurich",
+    "fullName": "Zurich, Switzerland",
+    "country": "Switzerland",
+    "type": "city"
+  },
+  {
+    "name": "Geneva",
+    "fullName": "Geneva, Switzerland",
+    "country": "Switzerland",
+    "type": "city"
+  },
+  {
+    "name": "Lausanne",
+    "fullName": "Lausanne, Switzerland",
+    "country": "Switzerland",
+    "type": "city"
+  },
+  {
+    "name": "Basel",
+    "fullName": "Basel, Switzerland",
+    "country": "Switzerland",
+    "type": "city"
+  },
+  {
+    "name": "Bern",
+    "fullName": "Bern, Switzerland",
+    "country": "Switzerland",
+    "type": "city"
+  },
+  {
+    "name": "New York",
+    "fullName": "New York, NY, United States",
+    "country": "United States",
+    "type": "city"
+  },
+  {
+    "name": "San Francisco",
+    "fullName": "San Francisco, CA, United States",
+    "country": "United States",
+    "type": "city"
+  },
+  {
+    "name": "Honolulu",
+    "fullName": "Honolulu, HI, United States",
+    "country": "United States",
+    "type": "city"
+  },
+  {
+    "name": "Reykjavik",
+    "fullName": "Reykjavik, Iceland",
+    "country": "Iceland",
+    "type": "city"
+  },
+  {
+    "name": "Boston",
+    "fullName": "Boston, MA, United States",
+    "country": "United States",
+    "type": "city"
+  },
+  {
+    "name": "Singapore",
+    "fullName": "Singapore, Singapore",
+    "country": "Singapore",
+    "type": "city"
+  },
+  {
+    "name": "Washington",
+    "fullName": "Washington, DC, United States",
+    "country": "United States",
+    "type": "city"
+  },
+  {
+    "name": "London",
+    "fullName": "London, United Kingdom",
+    "country": "United Kingdom",
+    "type": "city"
+  },
+  {
+    "name": "Trondheim",
+    "fullName": "Trondheim, Norway",
+    "country": "Norway",
+    "type": "city"
+  },
+  {
+    "name": "Seattle",
+    "fullName": "Seattle, WA, United States",
+    "country": "United States",
+    "type": "city"
+  },
+  {
+    "name": "San Diego",
+    "fullName": "San Diego, CA, United States",
+    "country": "United States",
+    "type": "city"
+  },
+  {
+    "name": "Oslo",
+    "fullName": "Oslo, Norway",
+    "country": "Norway",
+    "type": "city"
+  },
+  {
+    "name": "Los Angeles",
+    "fullName": "Los Angeles, CA, United States",
+    "country": "United States",
+    "type": "city"
+  },
+  {
+    "name": "Sacramento",
+    "fullName": "Sacramento, CA, United States",
+    "country": "United States",
+    "type": "city"
+  },
+  {
+    "name": "Bergen",
+    "fullName": "Bergen, Norway",
+    "country": "Norway",
+    "type": "city"
+  },
+  {
+    "name": "Chicago",
+    "fullName": "Chicago, IL, United States",
+    "country": "United States",
+    "type": "city"
+  },
+  {
+    "name": "Hong Kong",
+    "fullName": "Hong Kong, Hong Kong (China)",
+    "country": "Hong Kong (China)",
+    "type": "city"
+  },
+  {
+    "name": "Copenhagen",
+    "fullName": "Copenhagen, Denmark",
+    "country": "Denmark",
+    "type": "city"
+  },
+  {
+    "name": "Miami",
+    "fullName": "Miami, FL, United States",
+    "country": "United States",
+    "type": "city"
+  },
+  {
+    "name": "Paris",
+    "fullName": "Paris, France",
+    "country": "France",
+    "type": "city"
+  },
+  {
+    "name": "Tel Aviv-Yafo",
+    "fullName": "Tel Aviv-Yafo, Israel",
+    "country": "Israel",
+    "type": "city"
+  },
+  {
+    "name": "Sydney",
+    "fullName": "Sydney, Australia",
+    "country": "Australia",
+    "type": "city"
+  },
+  {
+    "name": "Denver",
+    "fullName": "Denver, CO, United States",
+    "country": "United States",
+    "type": "city"
+  },
+  {
+    "name": "Raleigh",
+    "fullName": "Raleigh, NC, United States",
+    "country": "United States",
+    "type": "city"
+  },
+  {
+    "name": "Stavanger",
+    "fullName": "Stavanger, Norway",
+    "country": "Norway",
+    "type": "city"
+  },
+  {
+    "name": "Canberra",
+    "fullName": "Canberra, Australia",
+    "country": "Australia",
+    "type": "city"
+  },
+  {
+    "name": "Espoo",
+    "fullName": "Espoo, Finland",
+    "country": "Finland",
+    "type": "city"
+  },
+  {
+    "name": "Philadelphia",
+    "fullName": "Philadelphia, PA, United States",
+    "country": "United States",
+    "type": "city"
+  },
+  {
+    "name": "Portland",
+    "fullName": "Portland, OR, United States",
+    "country": "United States",
+    "type": "city"
+  },
+  {
+    "name": "New Orleans",
+    "fullName": "New Orleans, LA, United States",
+    "country": "United States",
+    "type": "city"
+  },
+  {
+    "name": "Charlotte",
+    "fullName": "Charlotte, NC, United States",
+    "country": "United States",
+    "type": "city"
+  },
+  {
+    "name": "Tampa",
+    "fullName": "Tampa, FL, United States",
+    "country": "United States",
+    "type": "city"
+  },
+  {
+    "name": "Atlanta",
+    "fullName": "Atlanta, GA, United States",
+    "country": "United States",
+    "type": "city"
+  },
+  {
+    "name": "Aarhus",
+    "fullName": "Aarhus, Denmark",
+    "country": "Denmark",
+    "type": "city"
+  },
+  {
+    "name": "Amsterdam",
+    "fullName": "Amsterdam, Netherlands",
+    "country": "Netherlands",
+    "type": "city"
+  },
+  {
+    "name": "Munich",
+    "fullName": "Munich, Germany",
+    "country": "Germany",
+    "type": "city"
+  },
+  {
+    "name": "Haarlem",
+    "fullName": "Haarlem, Netherlands",
+    "country": "Netherlands",
+    "type": "city"
+  },
+  {
+    "name": "Seoul",
+    "fullName": "Seoul, South Korea",
+    "country": "South Korea",
+    "type": "city"
+  },
+  {
+    "name": "Minneapolis",
+    "fullName": "Minneapolis, MN, United States",
+    "country": "United States",
+    "type": "city"
+  },
+  {
+    "name": "Victoria",
+    "fullName": "Victoria, Canada",
+    "country": "Canada",
+    "type": "city"
+  },
+  {
+    "name": "Dublin",
+    "fullName": "Dublin, Ireland",
+    "country": "Ireland",
+    "type": "city"
+  },
+  {
+    "name": "Salzburg",
+    "fullName": "Salzburg, Austria",
+    "country": "Austria",
+    "type": "city"
+  },
+  {
+    "name": "Nashville",
+    "fullName": "Nashville, TN, United States",
+    "country": "United States",
+    "type": "city"
+  },
+  {
+    "name": "Orlando",
+    "fullName": "Orlando, FL, United States",
+    "country": "United States",
+    "type": "city"
+  },
+  {
+    "name": "Dallas",
+    "fullName": "Dallas, TX, United States",
+    "country": "United States",
+    "type": "city"
+  },
+  {
+    "name": "Edinburgh",
+    "fullName": "Edinburgh, United Kingdom",
+    "country": "United Kingdom",
+    "type": "city"
+  },
+  {
+    "name": "Adelaide",
+    "fullName": "Adelaide, Australia",
+    "country": "Australia",
+    "type": "city"
+  },
+  {
+    "name": "Hamburg",
+    "fullName": "Hamburg, Germany",
+    "country": "Germany",
+    "type": "city"
+  },
+  {
+    "name": "Nice",
+    "fullName": "Nice, France",
+    "country": "France",
+    "type": "city"
+  },
+  {
+    "name": "Wellington",
+    "fullName": "Wellington, New Zealand",
+    "country": "New Zealand",
+    "type": "city"
+  },
+  {
+    "name": "Vancouver",
+    "fullName": "Vancouver, Canada",
+    "country": "Canada",
+    "type": "city"
+  },
+  {
+    "name": "Helsinki",
+    "fullName": "Helsinki, Finland",
+    "country": "Finland",
+    "type": "city"
+  },
+  {
+    "name": "Cork",
+    "fullName": "Cork, Ireland",
+    "country": "Ireland",
+    "type": "city"
+  },
+  {
+    "name": "Columbus",
+    "fullName": "Columbus, OH, United States",
+    "country": "United States",
+    "type": "city"
+  },
+  {
+    "name": "Frankfurt",
+    "fullName": "Frankfurt, Germany",
+    "country": "Germany",
+    "type": "city"
+  },
+  {
+    "name": "Brighton",
+    "fullName": "Brighton, United Kingdom",
+    "country": "United Kingdom",
+    "type": "city"
+  },
+  {
+    "name": "Lyon",
+    "fullName": "Lyon, France",
+    "country": "France",
+    "type": "city"
+  },
+  {
+    "name": "Perth",
+    "fullName": "Perth, Australia",
+    "country": "Australia",
+    "type": "city"
+  },
+  {
+    "name": "Jerusalem",
+    "fullName": "Jerusalem, Israel",
+    "country": "Israel",
+    "type": "city"
+  },
+  {
+    "name": "Luxembourg",
+    "fullName": "Luxembourg, Luxembourg",
+    "country": "Luxembourg",
+    "type": "city"
+  },
+  {
+    "name": "Dusseldorf",
+    "fullName": "Dusseldorf, Germany",
+    "country": "Germany",
+    "type": "city"
+  },
+  {
+    "name": "Darmstadt",
+    "fullName": "Darmstadt, Germany",
+    "country": "Germany",
+    "type": "city"
+  },
+  {
+    "name": "Las Vegas",
+    "fullName": "Las Vegas, NV, United States",
+    "country": "United States",
+    "type": "city"
+  },
+  {
+    "name": "Maastricht",
+    "fullName": "Maastricht, Netherlands",
+    "country": "Netherlands",
+    "type": "city"
+  },
+  {
+    "name": "Toronto",
+    "fullName": "Toronto, Canada",
+    "country": "Canada",
+    "type": "city"
+  },
+  {
+    "name": "Heidelberg",
+    "fullName": "Heidelberg, Germany",
+    "country": "Germany",
+    "type": "city"
+  },
+  {
+    "name": "Brussels",
+    "fullName": "Brussels, Belgium",
+    "country": "Belgium",
+    "type": "city"
+  },
+  {
+    "name": "Kelowna",
+    "fullName": "Kelowna, Canada",
+    "country": "Canada",
+    "type": "city"
+  },
+  {
+    "name": "Tucson",
+    "fullName": "Tucson, AZ, United States",
+    "country": "United States",
+    "type": "city"
+  },
+  {
+    "name": "Milan",
+    "fullName": "Milan, Italy",
+    "country": "Italy",
+    "type": "city"
+  },
+  {
+    "name": "Vienna",
+    "fullName": "Vienna, Austria",
+    "country": "Austria",
+    "type": "city"
+  },
+  {
+    "name": "Stockholm",
+    "fullName": "Stockholm, Sweden",
+    "country": "Sweden",
+    "type": "city"
+  },
+  {
+    "name": "Phoenix",
+    "fullName": "Phoenix, AZ, United States",
+    "country": "United States",
+    "type": "city"
+  },
+  {
+    "name": "Manchester",
+    "fullName": "Manchester, United Kingdom",
+    "country": "United Kingdom",
+    "type": "city"
+  },
+  {
+    "name": "Freiburg im Breisgau",
+    "fullName": "Freiburg im Breisgau, Germany",
+    "country": "Germany",
+    "type": "city"
+  },
+  {
+    "name": "Utrecht",
+    "fullName": "Utrecht, Netherlands",
+    "country": "Netherlands",
+    "type": "city"
+  },
+  {
+    "name": "Calgary",
+    "fullName": "Calgary, Canada",
+    "country": "Canada",
+    "type": "city"
+  },
+  {
+    "name": "Stuttgart",
+    "fullName": "Stuttgart, Germany",
+    "country": "Germany",
+    "type": "city"
+  },
+  {
+    "name": "Graz",
+    "fullName": "Graz, Austria",
+    "country": "Austria",
+    "type": "city"
+  },
+  {
+    "name": "Auckland",
+    "fullName": "Auckland, New Zealand",
+    "country": "New Zealand",
+    "type": "city"
+  },
+  {
+    "name": "Rotterdam",
+    "fullName": "Rotterdam, Netherlands",
+    "country": "Netherlands",
+    "type": "city"
+  },
+  {
+    "name": "Glasgow",
+    "fullName": "Glasgow, United Kingdom",
+    "country": "United Kingdom",
+    "type": "city"
+  },
+  {
+    "name": "Essen",
+    "fullName": "Essen, Germany",
+    "country": "Germany",
+    "type": "city"
+  },
+  {
+    "name": "Melbourne",
+    "fullName": "Melbourne, Australia",
+    "country": "Australia",
+    "type": "city"
+  },
+  {
+    "name": "Berlin",
+    "fullName": "Berlin, Germany",
+    "country": "Germany",
+    "type": "city"
+  },
+  {
+    "name": "Madison",
+    "fullName": "Madison, WI, United States",
+    "country": "United States",
+    "type": "city"
+  },
+  {
+    "name": "Bonn",
+    "fullName": "Bonn, Germany",
+    "country": "Germany",
+    "type": "city"
+  },
+  {
+    "name": "Salt Lake City",
+    "fullName": "Salt Lake City, UT, United States",
+    "country": "United States",
+    "type": "city"
+  },
+  {
+    "name": "Cologne",
+    "fullName": "Cologne, Germany",
+    "country": "Germany",
+    "type": "city"
+  },
+  {
+    "name": "Karlsruhe",
+    "fullName": "Karlsruhe, Germany",
+    "country": "Germany",
+    "type": "city"
+  },
+  {
+    "name": "Brisbane",
+    "fullName": "Brisbane, Australia",
+    "country": "Australia",
+    "type": "city"
+  },
+  {
+    "name": "Nuremberg",
+    "fullName": "Nuremberg, Germany",
+    "country": "Germany",
+    "type": "city"
+  },
+  {
+    "name": "Gent",
+    "fullName": "Gent, Belgium",
+    "country": "Belgium",
+    "type": "city"
+  },
+  {
+    "name": "Bristol",
+    "fullName": "Bristol, United Kingdom",
+    "country": "United Kingdom",
+    "type": "city"
+  },
+  {
+    "name": "Leiden",
+    "fullName": "Leiden, Netherlands",
+    "country": "Netherlands",
+    "type": "city"
+  },
+  {
+    "name": "Ottawa",
+    "fullName": "Ottawa, Canada",
+    "country": "Canada",
+    "type": "city"
+  },
+  {
+    "name": "Almere",
+    "fullName": "Almere, Netherlands",
+    "country": "Netherlands",
+    "type": "city"
+  },
+  {
+    "name": "Halifax",
+    "fullName": "Halifax, Canada",
+    "country": "Canada",
+    "type": "city"
+  },
+  {
+    "name": "Austin",
+    "fullName": "Austin, TX, United States",
+    "country": "United States",
+    "type": "city"
+  },
+  {
+    "name": "Bremen",
+    "fullName": "Bremen, Germany",
+    "country": "Germany",
+    "type": "city"
+  },
+  {
+    "name": "Haifa",
+    "fullName": "Haifa, Israel",
+    "country": "Israel",
+    "type": "city"
+  },
+  {
+    "name": "Nottingham",
+    "fullName": "Nottingham, United Kingdom",
+    "country": "United Kingdom",
+    "type": "city"
+  },
+  {
+    "name": "Dortmund",
+    "fullName": "Dortmund, Germany",
+    "country": "Germany",
+    "type": "city"
+  },
+  {
+    "name": "San Antonio",
+    "fullName": "San Antonio, TX, United States",
+    "country": "United States",
+    "type": "city"
+  },
+  {
+    "name": "Montpellier",
+    "fullName": "Montpellier, France",
+    "country": "France",
+    "type": "city"
+  },
+  {
+    "name": "Hanover",
+    "fullName": "Hanover, Germany",
+    "country": "Germany",
+    "type": "city"
+  },
+  {
+    "name": "Houston",
+    "fullName": "Houston, TX, United States",
+    "country": "United States",
+    "type": "city"
+  },
+  {
+    "name": "Delft",
+    "fullName": "Delft, Netherlands",
+    "country": "Netherlands",
+    "type": "city"
+  },
+  {
+    "name": "Liverpool",
+    "fullName": "Liverpool, United Kingdom",
+    "country": "United Kingdom",
+    "type": "city"
+  },
+  {
+    "name": "Quebec City",
+    "fullName": "Quebec City, Canada",
+    "country": "Canada",
+    "type": "city"
+  },
+  {
+    "name": "Erlangen",
+    "fullName": "Erlangen, Germany",
+    "country": "Germany",
+    "type": "city"
+  },
+  {
+    "name": "Eindhoven",
+    "fullName": "Eindhoven, Netherlands",
+    "country": "Netherlands",
+    "type": "city"
+  },
+  {
+    "name": "Boise",
+    "fullName": "Boise, ID, United States",
+    "country": "United States",
+    "type": "city"
+  },
+  {
+    "name": "Leeds",
+    "fullName": "Leeds, United Kingdom",
+    "country": "United Kingdom",
+    "type": "city"
+  },
+  {
+    "name": "Tampere",
+    "fullName": "Tampere, Finland",
+    "country": "Finland",
+    "type": "city"
+  },
+  {
+    "name": "Bologna",
+    "fullName": "Bologna, Italy",
+    "country": "Italy",
+    "type": "city"
+  },
+  {
+    "name": "The Hague (Den Haag)",
+    "fullName": "The Hague (Den Haag), Netherlands",
+    "country": "Netherlands",
+    "type": "city"
+  },
+  {
+    "name": "Montreal",
+    "fullName": "Montreal, Canada",
+    "country": "Canada",
+    "type": "city"
+  },
+  {
+    "name": "Aachen",
+    "fullName": "Aachen, Germany",
+    "country": "Germany",
+    "type": "city"
+  },
+  {
+    "name": "Mannheim",
+    "fullName": "Mannheim, Germany",
+    "country": "Germany",
+    "type": "city"
+  },
+  {
+    "name": "Birmingham",
+    "fullName": "Birmingham, United Kingdom",
+    "country": "United Kingdom",
+    "type": "city"
+  },
+  {
+    "name": "Mississauga",
+    "fullName": "Mississauga, Canada",
+    "country": "Canada",
+    "type": "city"
+  },
+  {
+    "name": "Leipzig",
+    "fullName": "Leipzig, Germany",
+    "country": "Germany",
+    "type": "city"
+  },
+  {
+    "name": "Newcastle upon Tyne",
+    "fullName": "Newcastle upon Tyne, United Kingdom",
+    "country": "United Kingdom",
+    "type": "city"
+  },
+  {
+    "name": "Christchurch",
+    "fullName": "Christchurch, New Zealand",
+    "country": "New Zealand",
+    "type": "city"
+  },
+  {
+    "name": "Enschede",
+    "fullName": "Enschede, Netherlands",
+    "country": "Netherlands",
+    "type": "city"
+  },
+  {
+    "name": "Sheffield",
+    "fullName": "Sheffield, United Kingdom",
+    "country": "United Kingdom",
+    "type": "city"
+  },
+  {
+    "name": "Dresden",
+    "fullName": "Dresden, Germany",
+    "country": "Germany",
+    "type": "city"
+  },
+  {
+    "name": "Edmonton",
+    "fullName": "Edmonton, Canada",
+    "country": "Canada",
+    "type": "city"
+  },
+  {
+    "name": "Winnipeg",
+    "fullName": "Winnipeg, Canada",
+    "country": "Canada",
+    "type": "city"
+  },
+  {
+    "name": "Gothenburg",
+    "fullName": "Gothenburg, Sweden",
+    "country": "Sweden",
+    "type": "city"
+  },
+  {
+    "name": "Malmo",
+    "fullName": "Malmo, Sweden",
+    "country": "Sweden",
+    "type": "city"
+  },
+  {
+    "name": "Macao",
+    "fullName": "Macao, Macao (China)",
+    "country": "Macao (China)",
+    "type": "city"
+  },
+  {
+    "name": "Dubai",
+    "fullName": "Dubai, United Arab Emirates",
+    "country": "United Arab Emirates",
+    "type": "city"
+  },
+  {
+    "name": "Belfast",
+    "fullName": "Belfast, United Kingdom",
+    "country": "United Kingdom",
+    "type": "city"
+  },
+  {
+    "name": "Limassol",
+    "fullName": "Limassol, Cyprus",
+    "country": "Cyprus",
+    "type": "city"
+  },
+  {
+    "name": "London",
+    "fullName": "London, Canada",
+    "country": "Canada",
+    "type": "city"
+  },
+  {
+    "name": "Padova",
+    "fullName": "Padova, Italy",
+    "country": "Italy",
+    "type": "city"
+  },
+  {
+    "name": "Groningen",
+    "fullName": "Groningen, Netherlands",
+    "country": "Netherlands",
+    "type": "city"
+  },
+  {
+    "name": "Leuven",
+    "fullName": "Leuven, Belgium",
+    "country": "Belgium",
+    "type": "city"
+  },
+  {
+    "name": "Verona",
+    "fullName": "Verona, Italy",
+    "country": "Italy",
+    "type": "city"
+  },
+  {
+    "name": "Sliema",
+    "fullName": "Sliema, Malta",
+    "country": "Malta",
+    "type": "city"
+  },
+  {
+    "name": "Tallinn",
+    "fullName": "Tallinn, Estonia",
+    "country": "Estonia",
+    "type": "city"
+  },
+  {
+    "name": "Tokyo",
+    "fullName": "Tokyo, Japan",
+    "country": "Japan",
+    "type": "city"
+  },
+  {
+    "name": "Turin",
+    "fullName": "Turin, Italy",
+    "country": "Italy",
+    "type": "city"
+  },
+  {
+    "name": "Barcelona",
+    "fullName": "Barcelona, Spain",
+    "country": "Spain",
+    "type": "city"
+  },
+  {
+    "name": "Port of Spain",
+    "fullName": "Port of Spain, Trinidad And Tobago",
+    "country": "Trinidad And Tobago",
+    "type": "city"
+  },
+  {
+    "name": "Abu Dhabi",
+    "fullName": "Abu Dhabi, United Arab Emirates",
+    "country": "United Arab Emirates",
+    "type": "city"
+  },
+  {
+    "name": "Rome",
+    "fullName": "Rome, Italy",
+    "country": "Italy",
+    "type": "city"
+  },
+  {
+    "name": "Naples",
+    "fullName": "Naples, Italy",
+    "country": "Italy",
+    "type": "city"
+  },
+  {
+    "name": "San Jose",
+    "fullName": "San Jose, Costa Rica",
+    "country": "Costa Rica",
+    "type": "city"
+  },
+  {
+    "name": "Madrid",
+    "fullName": "Madrid, Spain",
+    "country": "Spain",
+    "type": "city"
+  },
+  {
+    "name": "Suzhou",
+    "fullName": "Suzhou, China",
+    "country": "China",
+    "type": "city"
+  },
+  {
+    "name": "Ljubljana",
+    "fullName": "Ljubljana, Slovenia",
+    "country": "Slovenia",
+    "type": "city"
+  },
+  {
+    "name": "Larnaca",
+    "fullName": "Larnaca, Cyprus",
+    "country": "Cyprus",
+    "type": "city"
+  },
+  {
+    "name": "Athens",
+    "fullName": "Athens, Greece",
+    "country": "Greece",
+    "type": "city"
+  },
+  {
+    "name": "Thessaloniki",
+    "fullName": "Thessaloniki, Greece",
+    "country": "Greece",
+    "type": "city"
+  },
+  {
+    "name": "Nicosia",
+    "fullName": "Nicosia, Cyprus",
+    "country": "Cyprus",
+    "type": "city"
+  },
+  {
+    "name": "Montevideo",
+    "fullName": "Montevideo, Uruguay",
+    "country": "Uruguay",
+    "type": "city"
+  },
+  {
+    "name": "Bari",
+    "fullName": "Bari, Italy",
+    "country": "Italy",
+    "type": "city"
+  },
+  {
+    "name": "Tartu",
+    "fullName": "Tartu, Estonia",
+    "country": "Estonia",
+    "type": "city"
+  },
+  {
+    "name": "Split",
+    "fullName": "Split, Croatia",
+    "country": "Croatia",
+    "type": "city"
+  },
+  {
+    "name": "Heraklion",
+    "fullName": "Heraklion, Greece",
+    "country": "Greece",
+    "type": "city"
+  },
+  {
+    "name": "Prague",
+    "fullName": "Prague, Czech Republic",
+    "country": "Czech Republic",
+    "type": "city"
+  },
+  {
+    "name": "Doha",
+    "fullName": "Doha, Qatar",
+    "country": "Qatar",
+    "type": "city"
+  },
+  {
+    "name": "Bratislava",
+    "fullName": "Bratislava, Slovakia",
+    "country": "Slovakia",
+    "type": "city"
+  },
+  {
+    "name": "Taipei",
+    "fullName": "Taipei, Taiwan",
+    "country": "Taiwan",
+    "type": "city"
+  },
+  {
+    "name": "Lisbon",
+    "fullName": "Lisbon, Portugal",
+    "country": "Portugal",
+    "type": "city"
+  },
+  {
+    "name": "Sharjah",
+    "fullName": "Sharjah, United Arab Emirates",
+    "country": "United Arab Emirates",
+    "type": "city"
+  },
+  {
+    "name": "Riga",
+    "fullName": "Riga, Latvia",
+    "country": "Latvia",
+    "type": "city"
+  },
+  {
+    "name": "Vilnius",
+    "fullName": "Vilnius, Lithuania",
+    "country": "Lithuania",
+    "type": "city"
+  },
+  {
+    "name": "Manama",
+    "fullName": "Manama, Bahrain",
+    "country": "Bahrain",
+    "type": "city"
+  },
+  {
+    "name": "Riyadh",
+    "fullName": "Riyadh, Saudi Arabia",
+    "country": "Saudi Arabia",
+    "type": "city"
+  },
+  {
+    "name": "Vigo",
+    "fullName": "Vigo, Spain",
+    "country": "Spain",
+    "type": "city"
+  },
+  {
+    "name": "Panama City",
+    "fullName": "Panama City, Panama",
+    "country": "Panama",
+    "type": "city"
+  },
+  {
+    "name": "Addis Ababa",
+    "fullName": "Addis Ababa, Ethiopia",
+    "country": "Ethiopia",
+    "type": "city"
+  },
+  {
+    "name": "Seville (Sevilla)",
+    "fullName": "Seville (Sevilla), Spain",
+    "country": "Spain",
+    "type": "city"
+  },
+  {
+    "name": "Kaunas",
+    "fullName": "Kaunas, Lithuania",
+    "country": "Lithuania",
+    "type": "city"
+  },
+  {
+    "name": "Valencia",
+    "fullName": "Valencia, Spain",
+    "country": "Spain",
+    "type": "city"
+  },
+  {
+    "name": "Malaga",
+    "fullName": "Malaga, Spain",
+    "country": "Spain",
+    "type": "city"
+  },
+  {
+    "name": "Zagreb",
+    "fullName": "Zagreb, Croatia",
+    "country": "Croatia",
+    "type": "city"
+  },
+  {
+    "name": "Porto",
+    "fullName": "Porto, Portugal",
+    "country": "Portugal",
+    "type": "city"
+  },
+  {
+    "name": "Tirana",
+    "fullName": "Tirana, Albania",
+    "country": "Albania",
+    "type": "city"
+  },
+  {
+    "name": "Warsaw",
+    "fullName": "Warsaw, Poland",
+    "country": "Poland",
+    "type": "city"
+  },
+  {
+    "name": "Brno",
+    "fullName": "Brno, Czech Republic",
+    "country": "Czech Republic",
+    "type": "city"
+  },
+  {
+    "name": "Gaborone",
+    "fullName": "Gaborone, Botswana",
+    "country": "Botswana",
+    "type": "city"
+  },
+  {
+    "name": "Plzen",
+    "fullName": "Plzen, Czech Republic",
+    "country": "Czech Republic",
+    "type": "city"
+  },
+  {
+    "name": "Jeddah (Jiddah)",
+    "fullName": "Jeddah (Jiddah), Saudi Arabia",
+    "country": "Saudi Arabia",
+    "type": "city"
+  },
+  {
+    "name": "Budva",
+    "fullName": "Budva, Montenegro",
+    "country": "Montenegro",
+    "type": "city"
+  },
+  {
+    "name": "Krakow (Cracow)",
+    "fullName": "Krakow (Cracow), Poland",
+    "country": "Poland",
+    "type": "city"
+  },
+  {
+    "name": "Beirut",
+    "fullName": "Beirut, Lebanon",
+    "country": "Lebanon",
+    "type": "city"
+  },
+  {
+    "name": "Kuwait City",
+    "fullName": "Kuwait City, Kuwait",
+    "country": "Kuwait",
+    "type": "city"
+  },
+  {
+    "name": "Yerevan",
+    "fullName": "Yerevan, Armenia",
+    "country": "Armenia",
+    "type": "city"
+  },
+  {
+    "name": "Caracas",
+    "fullName": "Caracas, Venezuela",
+    "country": "Venezuela",
+    "type": "city"
+  },
+  {
+    "name": "Ostrava",
+    "fullName": "Ostrava, Czech Republic",
+    "country": "Czech Republic",
+    "type": "city"
+  },
+  {
+    "name": "Monterrey",
+    "fullName": "Monterrey, Mexico",
+    "country": "Mexico",
+    "type": "city"
+  },
+  {
+    "name": "Ad Dammam",
+    "fullName": "Ad Dammam, Saudi Arabia",
+    "country": "Saudi Arabia",
+    "type": "city"
+  },
+  {
+    "name": "Coimbra",
+    "fullName": "Coimbra, Portugal",
+    "country": "Portugal",
+    "type": "city"
+  },
+  {
+    "name": "Wroclaw",
+    "fullName": "Wroclaw, Poland",
+    "country": "Poland",
+    "type": "city"
+  },
+  {
+    "name": "Santo Domingo",
+    "fullName": "Santo Domingo, Dominican Republic",
+    "country": "Dominican Republic",
+    "type": "city"
+  },
+  {
+    "name": "Braga",
+    "fullName": "Braga, Portugal",
+    "country": "Portugal",
+    "type": "city"
+  },
+  {
+    "name": "Belgrade",
+    "fullName": "Belgrade, Serbia",
+    "country": "Serbia",
+    "type": "city"
+  },
+  {
+    "name": "Bangkok",
+    "fullName": "Bangkok, Thailand",
+    "country": "Thailand",
+    "type": "city"
+  },
+  {
+    "name": "Bucharest",
+    "fullName": "Bucharest, Romania",
+    "country": "Romania",
+    "type": "city"
+  },
+  {
+    "name": "Gdansk",
+    "fullName": "Gdansk, Poland",
+    "country": "Poland",
+    "type": "city"
+  },
+  {
+    "name": "Shanghai",
+    "fullName": "Shanghai, China",
+    "country": "China",
+    "type": "city"
+  },
+  {
+    "name": "Santiago",
+    "fullName": "Santiago, Chile",
+    "country": "Chile",
+    "type": "city"
+  },
+  {
+    "name": "Budapest",
+    "fullName": "Budapest, Hungary",
+    "country": "Hungary",
+    "type": "city"
+  },
+  {
+    "name": "Katowice",
+    "fullName": "Katowice, Poland",
+    "country": "Poland",
+    "type": "city"
+  },
+  {
+    "name": "Sofia",
+    "fullName": "Sofia, Bulgaria",
+    "country": "Bulgaria",
+    "type": "city"
+  },
+  {
+    "name": "Muscat",
+    "fullName": "Muscat, Oman",
+    "country": "Oman",
+    "type": "city"
+  },
+  {
+    "name": "Accra",
+    "fullName": "Accra, Ghana",
+    "country": "Ghana",
+    "type": "city"
+  },
+  {
+    "name": "Constanta",
+    "fullName": "Constanta, Romania",
+    "country": "Romania",
+    "type": "city"
+  },
+  {
+    "name": "Amman",
+    "fullName": "Amman, Jordan",
+    "country": "Jordan",
+    "type": "city"
+  },
+  {
+    "name": "Poznan",
+    "fullName": "Poznan, Poland",
+    "country": "Poland",
+    "type": "city"
+  },
+  {
+    "name": "San Salvador",
+    "fullName": "San Salvador, El Salvador",
+    "country": "El Salvador",
+    "type": "city"
+  },
+  {
+    "name": "Guatemala City",
+    "fullName": "Guatemala City, Guatemala",
+    "country": "Guatemala",
+    "type": "city"
+  },
+  {
+    "name": "Lodz",
+    "fullName": "Lodz, Poland",
+    "country": "Poland",
+    "type": "city"
+  },
+  {
+    "name": "Novi Sad",
+    "fullName": "Novi Sad, Serbia",
+    "country": "Serbia",
+    "type": "city"
+  },
+  {
+    "name": "Kigali",
+    "fullName": "Kigali, Rwanda",
+    "country": "Rwanda",
+    "type": "city"
+  },
+  {
+    "name": "Istanbul",
+    "fullName": "Istanbul, Turkey",
+    "country": "Turkey",
+    "type": "city"
+  },
+  {
+    "name": "Cluj-Napoca",
+    "fullName": "Cluj-Napoca, Romania",
+    "country": "Romania",
+    "type": "city"
+  },
+  {
+    "name": "Beijing",
+    "fullName": "Beijing, China",
+    "country": "China",
+    "type": "city"
+  },
+  {
+    "name": "Mexico City",
+    "fullName": "Mexico City, Mexico",
+    "country": "Mexico",
+    "type": "city"
+  },
+  {
+    "name": "Podgorica",
+    "fullName": "Podgorica, Montenegro",
+    "country": "Montenegro",
+    "type": "city"
+  },
+  {
+    "name": "Phnom Penh",
+    "fullName": "Phnom Penh, Cambodia",
+    "country": "Cambodia",
+    "type": "city"
+  },
+  {
+    "name": "Szczecin",
+    "fullName": "Szczecin, Poland",
+    "country": "Poland",
+    "type": "city"
+  },
+  {
+    "name": "Shenzhen",
+    "fullName": "Shenzhen, China",
+    "country": "China",
+    "type": "city"
+  },
+  {
+    "name": "Brasov",
+    "fullName": "Brasov, Romania",
+    "country": "Romania",
+    "type": "city"
+  },
+  {
+    "name": "Harare",
+    "fullName": "Harare, Zimbabwe",
+    "country": "Zimbabwe",
+    "type": "city"
+  },
+  {
+    "name": "Varna",
+    "fullName": "Varna, Bulgaria",
+    "country": "Bulgaria",
+    "type": "city"
+  },
+  {
+    "name": "Puerto Vallarta",
+    "fullName": "Puerto Vallarta, Mexico",
+    "country": "Mexico",
+    "type": "city"
+  },
+  {
+    "name": "Merida",
+    "fullName": "Merida, Mexico",
+    "country": "Mexico",
+    "type": "city"
+  },
+  {
+    "name": "Tijuana",
+    "fullName": "Tijuana, Mexico",
+    "country": "Mexico",
+    "type": "city"
+  },
+  {
+    "name": "Timisoara",
+    "fullName": "Timisoara, Romania",
+    "country": "Romania",
+    "type": "city"
+  },
+  {
+    "name": "Antalya",
+    "fullName": "Antalya, Turkey",
+    "country": "Turkey",
+    "type": "city"
+  },
+  {
+    "name": "Queretaro (Santiago de Quer\u00e9taro)",
+    "fullName": "Queretaro (Santiago de Quer\u00e9taro), Mexico",
+    "country": "Mexico",
+    "type": "city"
+  },
+  {
+    "name": "Guayaquil",
+    "fullName": "Guayaquil, Ecuador",
+    "country": "Ecuador",
+    "type": "city"
+  },
+  {
+    "name": "Guangzhou",
+    "fullName": "Guangzhou, China",
+    "country": "China",
+    "type": "city"
+  },
+  {
+    "name": "Oradea",
+    "fullName": "Oradea, Romania",
+    "country": "Romania",
+    "type": "city"
+  },
+  {
+    "name": "Johannesburg",
+    "fullName": "Johannesburg, South Africa",
+    "country": "South Africa",
+    "type": "city"
+  },
+  {
+    "name": "Manila",
+    "fullName": "Manila, Philippines",
+    "country": "Philippines",
+    "type": "city"
+  },
+  {
+    "name": "Burgas",
+    "fullName": "Burgas, Bulgaria",
+    "country": "Bulgaria",
+    "type": "city"
+  },
+  {
+    "name": "Guadalajara",
+    "fullName": "Guadalajara, Mexico",
+    "country": "Mexico",
+    "type": "city"
+  },
+  {
+    "name": "Debrecen",
+    "fullName": "Debrecen, Hungary",
+    "country": "Hungary",
+    "type": "city"
+  },
+  {
+    "name": "Iasi",
+    "fullName": "Iasi, Romania",
+    "country": "Romania",
+    "type": "city"
+  },
+  {
+    "name": "Colombo",
+    "fullName": "Colombo, Sri Lanka",
+    "country": "Sri Lanka",
+    "type": "city"
+  },
+  {
+    "name": "Suva",
+    "fullName": "Suva, Fiji",
+    "country": "Fiji",
+    "type": "city"
+  },
+  {
+    "name": "Banja Luka",
+    "fullName": "Banja Luka, Bosnia And Herzegovina",
+    "country": "Bosnia And Herzegovina",
+    "type": "city"
+  },
+  {
+    "name": "Izmir",
+    "fullName": "Izmir, Turkey",
+    "country": "Turkey",
+    "type": "city"
+  },
+  {
+    "name": "Tbilisi",
+    "fullName": "Tbilisi, Georgia",
+    "country": "Georgia",
+    "type": "city"
+  },
+  {
+    "name": "Kuala Lumpur",
+    "fullName": "Kuala Lumpur, Malaysia",
+    "country": "Malaysia",
+    "type": "city"
+  },
+  {
+    "name": "Kampala",
+    "fullName": "Kampala, Uganda",
+    "country": "Uganda",
+    "type": "city"
+  },
+  {
+    "name": "Ankara",
+    "fullName": "Ankara, Turkey",
+    "country": "Turkey",
+    "type": "city"
+  },
+  {
+    "name": "Plovdiv",
+    "fullName": "Plovdiv, Bulgaria",
+    "country": "Bulgaria",
+    "type": "city"
+  },
+  {
+    "name": "Pattaya",
+    "fullName": "Pattaya, Thailand",
+    "country": "Thailand",
+    "type": "city"
+  },
+  {
+    "name": "Sibiu",
+    "fullName": "Sibiu, Romania",
+    "country": "Romania",
+    "type": "city"
+  },
+  {
+    "name": "Sarajevo",
+    "fullName": "Sarajevo, Bosnia And Herzegovina",
+    "country": "Bosnia And Herzegovina",
+    "type": "city"
+  },
+  {
+    "name": "Moscow",
+    "fullName": "Moscow, Russia",
+    "country": "Russia",
+    "type": "city"
+  },
+  {
+    "name": "Hangzhou",
+    "fullName": "Hangzhou, China",
+    "country": "China",
+    "type": "city"
+  },
+  {
+    "name": "Buenos Aires",
+    "fullName": "Buenos Aires, Argentina",
+    "country": "Argentina",
+    "type": "city"
+  },
+  {
+    "name": "Port Elizabeth",
+    "fullName": "Port Elizabeth, South Africa",
+    "country": "South Africa",
+    "type": "city"
+  },
+  {
+    "name": "Cape Town",
+    "fullName": "Cape Town, South Africa",
+    "country": "South Africa",
+    "type": "city"
+  },
+  {
+    "name": "Puebla",
+    "fullName": "Puebla, Mexico",
+    "country": "Mexico",
+    "type": "city"
+  },
+  {
+    "name": "Chisinau",
+    "fullName": "Chisinau, Moldova",
+    "country": "Moldova",
+    "type": "city"
+  },
+  {
+    "name": "Skopje",
+    "fullName": "Skopje, North Macedonia",
+    "country": "North Macedonia",
+    "type": "city"
+  },
+  {
+    "name": "Ulaanbaatar",
+    "fullName": "Ulaanbaatar, Mongolia",
+    "country": "Mongolia",
+    "type": "city"
+  },
+  {
+    "name": "Pretoria",
+    "fullName": "Pretoria, South Africa",
+    "country": "South Africa",
+    "type": "city"
+  },
+  {
+    "name": "Quito",
+    "fullName": "Quito, Ecuador",
+    "country": "Ecuador",
+    "type": "city"
+  },
+  {
+    "name": "Casablanca",
+    "fullName": "Casablanca, Morocco",
+    "country": "Morocco",
+    "type": "city"
+  },
+  {
+    "name": "Erbil (Irbil)",
+    "fullName": "Erbil (Irbil), Iraq",
+    "country": "Iraq",
+    "type": "city"
+  },
+  {
+    "name": "Nis",
+    "fullName": "Nis, Serbia",
+    "country": "Serbia",
+    "type": "city"
+  },
+  {
+    "name": "Lima",
+    "fullName": "Lima, Peru",
+    "country": "Peru",
+    "type": "city"
+  },
+  {
+    "name": "Sao Paulo",
+    "fullName": "Sao Paulo, Brazil",
+    "country": "Brazil",
+    "type": "city"
+  },
+  {
+    "name": "Rabat",
+    "fullName": "Rabat, Morocco",
+    "country": "Morocco",
+    "type": "city"
+  },
+  {
+    "name": "Baku",
+    "fullName": "Baku, Azerbaijan",
+    "country": "Azerbaijan",
+    "type": "city"
+  },
+  {
+    "name": "Bursa",
+    "fullName": "Bursa, Turkey",
+    "country": "Turkey",
+    "type": "city"
+  },
+  {
+    "name": "Lagos",
+    "fullName": "Lagos, Nigeria",
+    "country": "Nigeria",
+    "type": "city"
+  },
+  {
+    "name": "Baghdad",
+    "fullName": "Baghdad, Iraq",
+    "country": "Iraq",
+    "type": "city"
+  },
+  {
+    "name": "Tuzla",
+    "fullName": "Tuzla, Bosnia And Herzegovina",
+    "country": "Bosnia And Herzegovina",
+    "type": "city"
+  },
+  {
+    "name": "Rio de Janeiro",
+    "fullName": "Rio de Janeiro, Brazil",
+    "country": "Brazil",
+    "type": "city"
+  },
+  {
+    "name": "Chiang Mai",
+    "fullName": "Chiang Mai, Thailand",
+    "country": "Thailand",
+    "type": "city"
+  },
+  {
+    "name": "Durban",
+    "fullName": "Durban, South Africa",
+    "country": "South Africa",
+    "type": "city"
+  },
+  {
+    "name": "Mersin",
+    "fullName": "Mersin, Turkey",
+    "country": "Turkey",
+    "type": "city"
+  },
+  {
+    "name": "Almaty",
+    "fullName": "Almaty, Kazakhstan",
+    "country": "Kazakhstan",
+    "type": "city"
+  },
+  {
+    "name": "Batumi",
+    "fullName": "Batumi, Ajara, Georgia",
+    "country": "Georgia",
+    "type": "city"
+  },
+  {
+    "name": "Nairobi",
+    "fullName": "Nairobi, Kenya",
+    "country": "Kenya",
+    "type": "city"
+  },
+  {
+    "name": "Chengdu",
+    "fullName": "Chengdu, China",
+    "country": "China",
+    "type": "city"
+  },
+  {
+    "name": "Wuhan",
+    "fullName": "Wuhan, China",
+    "country": "China",
+    "type": "city"
+  },
+  {
+    "name": "Saint Petersburg",
+    "fullName": "Saint Petersburg, Russia",
+    "country": "Russia",
+    "type": "city"
+  },
+  {
+    "name": "Brasilia",
+    "fullName": "Brasilia, Brazil",
+    "country": "Brazil",
+    "type": "city"
+  },
+  {
+    "name": "Florianopolis",
+    "fullName": "Florianopolis, Brazil",
+    "country": "Brazil",
+    "type": "city"
+  },
+  {
+    "name": "Jakarta",
+    "fullName": "Jakarta, Indonesia",
+    "country": "Indonesia",
+    "type": "city"
+  },
+  {
+    "name": "Astana (Nur-Sultan)",
+    "fullName": "Astana (Nur-Sultan), Kazakhstan",
+    "country": "Kazakhstan",
+    "type": "city"
+  },
+  {
+    "name": "Cuenca",
+    "fullName": "Cuenca, Ecuador",
+    "country": "Ecuador",
+    "type": "city"
+  },
+  {
+    "name": "Porto Alegre",
+    "fullName": "Porto Alegre, Brazil",
+    "country": "Brazil",
+    "type": "city"
+  },
+  {
+    "name": "Ho Chi Minh City",
+    "fullName": "Ho Chi Minh City, Vietnam",
+    "country": "Vietnam",
+    "type": "city"
+  },
+  {
+    "name": "Campinas",
+    "fullName": "Campinas, Brazil",
+    "country": "Brazil",
+    "type": "city"
+  },
+  {
+    "name": "Tunis",
+    "fullName": "Tunis, Tunisia",
+    "country": "Tunisia",
+    "type": "city"
+  },
+  {
+    "name": "Hanoi",
+    "fullName": "Hanoi, Vietnam",
+    "country": "Vietnam",
+    "type": "city"
+  },
+  {
+    "name": "Medellin",
+    "fullName": "Medellin, Colombia",
+    "country": "Colombia",
+    "type": "city"
+  },
+  {
+    "name": "Fortaleza",
+    "fullName": "Fortaleza, Brazil",
+    "country": "Brazil",
+    "type": "city"
+  },
+  {
+    "name": "Vladivostok",
+    "fullName": "Vladivostok, Russia",
+    "country": "Russia",
+    "type": "city"
+  },
+  {
+    "name": "Algiers",
+    "fullName": "Algiers, Algeria",
+    "country": "Algeria",
+    "type": "city"
+  },
+  {
+    "name": "Kiev (Kyiv)",
+    "fullName": "Kiev (Kyiv), Ukraine",
+    "country": "Ukraine",
+    "type": "city"
+  },
+  {
+    "name": "Tehran",
+    "fullName": "Tehran, Iran",
+    "country": "Iran",
+    "type": "city"
+  },
+  {
+    "name": "Belo Horizonte",
+    "fullName": "Belo Horizonte, Brazil",
+    "country": "Brazil",
+    "type": "city"
+  },
+  {
+    "name": "Salvador",
+    "fullName": "Salvador, Brazil",
+    "country": "Brazil",
+    "type": "city"
+  },
+  {
+    "name": "Dar es Salaam",
+    "fullName": "Dar es Salaam, Tanzania",
+    "country": "Tanzania",
+    "type": "city"
+  },
+  {
+    "name": "Bishkek",
+    "fullName": "Bishkek, Kyrgyzstan",
+    "country": "Kyrgyzstan",
+    "type": "city"
+  },
+  {
+    "name": "Curitiba",
+    "fullName": "Curitiba, Brazil",
+    "country": "Brazil",
+    "type": "city"
+  },
+  {
+    "name": "Pristina",
+    "fullName": "Pristina, Kosovo (Disputed Territory)",
+    "country": "Kosovo (Disputed Territory)",
+    "type": "city"
+  },
+  {
+    "name": "Bogota",
+    "fullName": "Bogota, Colombia",
+    "country": "Colombia",
+    "type": "city"
+  },
+  {
+    "name": "Sao Jose dos Campos",
+    "fullName": "Sao Jose dos Campos, Brazil",
+    "country": "Brazil",
+    "type": "city"
+  },
+  {
+    "name": "Cali",
+    "fullName": "Cali, Colombia",
+    "country": "Colombia",
+    "type": "city"
+  },
+  {
+    "name": "Samara",
+    "fullName": "Samara, Russia",
+    "country": "Russia",
+    "type": "city"
+  },
+  {
+    "name": "Minsk",
+    "fullName": "Minsk, Belarus",
+    "country": "Belarus",
+    "type": "city"
+  },
+  {
+    "name": "Yekaterinburg",
+    "fullName": "Yekaterinburg, Russia",
+    "country": "Russia",
+    "type": "city"
+  },
+  {
+    "name": "Mumbai",
+    "fullName": "Mumbai, India",
+    "country": "India",
+    "type": "city"
+  },
+  {
+    "name": "Recife",
+    "fullName": "Recife, Brazil",
+    "country": "Brazil",
+    "type": "city"
+  },
+  {
+    "name": "Krasnodar",
+    "fullName": "Krasnodar, Russia",
+    "country": "Russia",
+    "type": "city"
+  },
+  {
+    "name": "Dnipro",
+    "fullName": "Dnipro, Ukraine",
+    "country": "Ukraine",
+    "type": "city"
+  },
+  {
+    "name": "Kazan",
+    "fullName": "Kazan, Russia",
+    "country": "Russia",
+    "type": "city"
+  },
+  {
+    "name": "Tashkent",
+    "fullName": "Tashkent, Uzbekistan",
+    "country": "Uzbekistan",
+    "type": "city"
+  },
+  {
+    "name": "Nizhny Novgorod",
+    "fullName": "Nizhny Novgorod, Russia",
+    "country": "Russia",
+    "type": "city"
+  },
+  {
+    "name": "Kaliningrad",
+    "fullName": "Kaliningrad, Russia",
+    "country": "Russia",
+    "type": "city"
+  },
+  {
+    "name": "Novosibirsk",
+    "fullName": "Novosibirsk, Russia",
+    "country": "Russia",
+    "type": "city"
+  },
+  {
+    "name": "Ufa",
+    "fullName": "Ufa, Russia",
+    "country": "Russia",
+    "type": "city"
+  },
+  {
+    "name": "Odessa (Odesa)",
+    "fullName": "Odessa (Odesa), Ukraine",
+    "country": "Ukraine",
+    "type": "city"
+  },
+  {
+    "name": "Gurgaon",
+    "fullName": "Gurgaon, India",
+    "country": "India",
+    "type": "city"
+  },
+  {
+    "name": "Rostov-on-Don (Rostov-na-donu)",
+    "fullName": "Rostov-on-Don (Rostov-na-donu), Russia",
+    "country": "Russia",
+    "type": "city"
+  },
+  {
+    "name": "Kathmandu",
+    "fullName": "Kathmandu, Nepal",
+    "country": "Nepal",
+    "type": "city"
+  },
+  {
+    "name": "Kharkiv",
+    "fullName": "Kharkiv, Ukraine",
+    "country": "Ukraine",
+    "type": "city"
+  },
+  {
+    "name": "Lviv",
+    "fullName": "Lviv, Ukraine",
+    "country": "Ukraine",
+    "type": "city"
+  },
+  {
+    "name": "Bangalore",
+    "fullName": "Bangalore, India",
+    "country": "India",
+    "type": "city"
+  },
+  {
+    "name": "Perm",
+    "fullName": "Perm, Russia",
+    "country": "Russia",
+    "type": "city"
+  },
+  {
+    "name": "Dhaka",
+    "fullName": "Dhaka, Bangladesh",
+    "country": "Bangladesh",
+    "type": "city"
+  },
+  {
+    "name": "Asuncion",
+    "fullName": "Asuncion, Paraguay",
+    "country": "Paraguay",
+    "type": "city"
+  },
+  {
+    "name": "Pune",
+    "fullName": "Pune, India",
+    "country": "India",
+    "type": "city"
+  },
+  {
+    "name": "Noida",
+    "fullName": "Noida, India",
+    "country": "India",
+    "type": "city"
+  },
+  {
+    "name": "Delhi",
+    "fullName": "Delhi, India",
+    "country": "India",
+    "type": "city"
+  },
+  {
+    "name": "Hyderabad",
+    "fullName": "Hyderabad, India",
+    "country": "India",
+    "type": "city"
+  },
+  {
+    "name": "Ahmedabad",
+    "fullName": "Ahmedabad, India",
+    "country": "India",
+    "type": "city"
+  },
+  {
+    "name": "Chelyabinsk",
+    "fullName": "Chelyabinsk, Russia",
+    "country": "Russia",
+    "type": "city"
+  },
+  {
+    "name": "Tripoli",
+    "fullName": "Tripoli, Libya",
+    "country": "Libya",
+    "type": "city"
+  },
+  {
+    "name": "Chennai",
+    "fullName": "Chennai, India",
+    "country": "India",
+    "type": "city"
+  },
+  {
+    "name": "Vadodara",
+    "fullName": "Vadodara, India",
+    "country": "India",
+    "type": "city"
+  },
+  {
+    "name": "Islamabad",
+    "fullName": "Islamabad, Pakistan",
+    "country": "Pakistan",
+    "type": "city"
+  },
+  {
+    "name": "Chandigarh",
+    "fullName": "Chandigarh, India",
+    "country": "India",
+    "type": "city"
+  },
+  {
+    "name": "Cairo",
+    "fullName": "Cairo, Egypt",
+    "country": "Egypt",
+    "type": "city"
+  },
+  {
+    "name": "Bhubaneswar",
+    "fullName": "Bhubaneswar, India",
+    "country": "India",
+    "type": "city"
+  },
+  {
+    "name": "Kolkata",
+    "fullName": "Kolkata, India",
+    "country": "India",
+    "type": "city"
+  },
+  {
+    "name": "Surat",
+    "fullName": "Surat, India",
+    "country": "India",
+    "type": "city"
+  },
+  {
+    "name": "Kochi",
+    "fullName": "Kochi, India",
+    "country": "India",
+    "type": "city"
+  },
+  {
+    "name": "Jaipur",
+    "fullName": "Jaipur, India",
+    "country": "India",
+    "type": "city"
+  },
+  {
+    "name": "Lucknow (Lakhnau)",
+    "fullName": "Lucknow (Lakhnau), India",
+    "country": "India",
+    "type": "city"
+  },
+  {
+    "name": "Indore",
+    "fullName": "Indore, India",
+    "country": "India",
+    "type": "city"
+  },
+  {
+    "name": "Karachi",
+    "fullName": "Karachi, Pakistan",
+    "country": "Pakistan",
+    "type": "city"
+  },
+  {
+    "name": "Lahore",
+    "fullName": "Lahore, Pakistan",
+    "country": "Pakistan",
+    "type": "city"
+  },
+  {
+    "name": "Alexandria",
+    "fullName": "Alexandria, Egypt",
+    "country": "Egypt",
+    "type": "city"
+  },
+  {
+    "name": "Coimbatore",
+    "fullName": "Coimbatore, India",
+    "country": "India",
+    "type": "city"
+  },
+  {
+    "name": "Switzerland",
+    "fullName": "Switzerland",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Iceland",
+    "fullName": "Iceland",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Singapore",
+    "fullName": "Singapore",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Norway",
+    "fullName": "Norway",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Denmark",
+    "fullName": "Denmark",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Hong Kong (China)",
+    "fullName": "Hong Kong (China)",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "United States",
+    "fullName": "United States",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Australia",
+    "fullName": "Australia",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Austria",
+    "fullName": "Austria",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Canada",
+    "fullName": "Canada",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "New Zealand",
+    "fullName": "New Zealand",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Ireland",
+    "fullName": "Ireland",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "France",
+    "fullName": "France",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Finland",
+    "fullName": "Finland",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Netherlands",
+    "fullName": "Netherlands",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Israel",
+    "fullName": "Israel",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Luxembourg",
+    "fullName": "Luxembourg",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Germany",
+    "fullName": "Germany",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "United Kingdom",
+    "fullName": "United Kingdom",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Belgium",
+    "fullName": "Belgium",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "South Korea",
+    "fullName": "South Korea",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Sweden",
+    "fullName": "Sweden",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Italy",
+    "fullName": "Italy",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "United Arab Emirates",
+    "fullName": "United Arab Emirates",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Cyprus",
+    "fullName": "Cyprus",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Uruguay",
+    "fullName": "Uruguay",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Jamaica",
+    "fullName": "Jamaica",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Malta",
+    "fullName": "Malta",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Trinidad And Tobago",
+    "fullName": "Trinidad And Tobago",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Costa Rica",
+    "fullName": "Costa Rica",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Bahrain",
+    "fullName": "Bahrain",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Greece",
+    "fullName": "Greece",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Estonia",
+    "fullName": "Estonia",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Qatar",
+    "fullName": "Qatar",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Slovenia",
+    "fullName": "Slovenia",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Latvia",
+    "fullName": "Latvia",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Spain",
+    "fullName": "Spain",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Lithuania",
+    "fullName": "Lithuania",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Slovakia",
+    "fullName": "Slovakia",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Czech Republic",
+    "fullName": "Czech Republic",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Panama",
+    "fullName": "Panama",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Japan",
+    "fullName": "Japan",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Croatia",
+    "fullName": "Croatia",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Saudi Arabia",
+    "fullName": "Saudi Arabia",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Taiwan",
+    "fullName": "Taiwan",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Portugal",
+    "fullName": "Portugal",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Oman",
+    "fullName": "Oman",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Kuwait",
+    "fullName": "Kuwait",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Albania",
+    "fullName": "Albania",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Lebanon",
+    "fullName": "Lebanon",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Hungary",
+    "fullName": "Hungary",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Jordan",
+    "fullName": "Jordan",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Armenia",
+    "fullName": "Armenia",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Poland",
+    "fullName": "Poland",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Mexico",
+    "fullName": "Mexico",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "El Salvador",
+    "fullName": "El Salvador",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Montenegro",
+    "fullName": "Montenegro",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Chile",
+    "fullName": "Chile",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Guatemala",
+    "fullName": "Guatemala",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Venezuela",
+    "fullName": "Venezuela",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Bulgaria",
+    "fullName": "Bulgaria",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Dominican Republic",
+    "fullName": "Dominican Republic",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Serbia",
+    "fullName": "Serbia",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Romania",
+    "fullName": "Romania",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Turkey",
+    "fullName": "Turkey",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Cambodia",
+    "fullName": "Cambodia",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Zimbabwe",
+    "fullName": "Zimbabwe",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Fiji",
+    "fullName": "Fiji",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Bosnia And Herzegovina",
+    "fullName": "Bosnia And Herzegovina",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Sri Lanka",
+    "fullName": "Sri Lanka",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "South Africa",
+    "fullName": "South Africa",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Thailand",
+    "fullName": "Thailand",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Moldova",
+    "fullName": "Moldova",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Georgia",
+    "fullName": "Georgia",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "North Macedonia",
+    "fullName": "North Macedonia",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Ecuador",
+    "fullName": "Ecuador",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Kazakhstan",
+    "fullName": "Kazakhstan",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "China",
+    "fullName": "China",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Nigeria",
+    "fullName": "Nigeria",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Azerbaijan",
+    "fullName": "Azerbaijan",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Philippines",
+    "fullName": "Philippines",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Russia",
+    "fullName": "Russia",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Ghana",
+    "fullName": "Ghana",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Brazil",
+    "fullName": "Brazil",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Kenya",
+    "fullName": "Kenya",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Botswana",
+    "fullName": "Botswana",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Malaysia",
+    "fullName": "Malaysia",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Peru",
+    "fullName": "Peru",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Morocco",
+    "fullName": "Morocco",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Kosovo (Disputed Territory)",
+    "fullName": "Kosovo (Disputed Territory)",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Argentina",
+    "fullName": "Argentina",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Iraq",
+    "fullName": "Iraq",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Uganda",
+    "fullName": "Uganda",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Algeria",
+    "fullName": "Algeria",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Colombia",
+    "fullName": "Colombia",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Vietnam",
+    "fullName": "Vietnam",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Tunisia",
+    "fullName": "Tunisia",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Kyrgyzstan",
+    "fullName": "Kyrgyzstan",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Indonesia",
+    "fullName": "Indonesia",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Iran",
+    "fullName": "Iran",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Uzbekistan",
+    "fullName": "Uzbekistan",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Belarus",
+    "fullName": "Belarus",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Ukraine",
+    "fullName": "Ukraine",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Nepal",
+    "fullName": "Nepal",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Paraguay",
+    "fullName": "Paraguay",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Madagascar",
+    "fullName": "Madagascar",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Tanzania",
+    "fullName": "Tanzania",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Bangladesh",
+    "fullName": "Bangladesh",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "India",
+    "fullName": "India",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Egypt",
+    "fullName": "Egypt",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Libya",
+    "fullName": "Libya",
+    "country": "",
+    "type": "country"
+  },
+  {
+    "name": "Pakistan",
+    "fullName": "Pakistan",
+    "country": "",
+    "type": "country"
+  }
+]

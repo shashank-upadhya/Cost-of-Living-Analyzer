@@ -1,43 +1,49 @@
-from django.shortcuts import render
+from pathlib import Path
+
+from django.conf import settings
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
-from .models import List_cities
-from .serializer import CitySerializer
-from django.http import JsonResponse
 import json
 
-# Create your views here.
-with open('C:/Users/shash/Documents/Cost-of-living-Analyzer/backend/json/current.json', 'r') as file:
-    current_data = json.load(file)
 
-with open('C:/Users/shash/Documents/Cost-of-living-Analyzer/backend/json/2023.json', 'r') as file:
-    data_2023 = json.load(file)
+# ---------------------------------------------------------------------------
+# Data loading — resolve paths from settings.JSON_DATA_DIR (portable)
+# ---------------------------------------------------------------------------
 
-with open('C:/Users/shash\Documents/Cost-of-living-Analyzer/backend/json/2022.json', 'r') as file:
-    data_2022 = json.load(file)
-
-with open('C:/Users/shash/Documents/Cost-of-living-Analyzer/backend/json/2021.json', 'r') as file:
-    data_2021 = json.load(file)
-
-with open('C:/Users/shash/Documents/Cost-of-living-Analyzer/backend/json/2020.json', 'r') as file:
-    data_2020 = json.load(file)
-
-with open('C:/Users/shash/Documents/Cost-of-living-Analyzer/backend/json/list_of_countries.json', 'r') as file:
-    country_city_mapping = json.load(file)
-
-with open('C:/Users/shash/Documents/Cost-of-living-Analyzer/backend/json/country_details.json', 'r') as file:
-    country_details = json.load(file)
+JSON_DIR = getattr(
+    settings, 'JSON_DATA_DIR',
+    Path(__file__).resolve().parent.parent.parent / 'json',
+)
 
 
-# Django view to fetch city data across years
+def _load_json(filename):
+    """Load a JSON file from the data directory."""
+    with open(JSON_DIR / filename, 'r', encoding='utf-8') as f:
+        return json.load(f)
+
+
+current_data = _load_json('current.json')
+data_2023 = _load_json('2023.json')
+data_2022 = _load_json('2022.json')
+data_2021 = _load_json('2021.json')
+data_2020 = _load_json('2020.json')
+country_city_mapping = _load_json('list_of_countries.json')
+country_details = _load_json('country_details.json')
+
+
+# ---------------------------------------------------------------------------
+# API views
+# ---------------------------------------------------------------------------
+
 @api_view(['POST'])
 def get_country_details(request):
-    a=request.data
-    country_name = a['country_name'].strip().lower()
-    # print(country_name)
-    # print(request.POST)
-    # print(f"Available countries: {list(country_city_mapping.keys())}")
+    country_name = request.data.get('country_name', '').strip().lower()
+    if not country_name:
+        return Response(
+            {"error": "country_name is required."},
+            status=status.HTTP_400_BAD_REQUEST,
+        )
 
     # Match the country in the country-to-city mapping
     cities = []
@@ -47,19 +53,25 @@ def get_country_details(request):
             break
 
     if not cities:
-        return {"error": f"No data found for country: {country_name}"}
+        return Response(
+            {"error": f"No data found for country: {country_name}"},
+            status=status.HTTP_404_NOT_FOUND,
+        )
 
-    # # Normalize city names for matching
+    # Normalize city names for matching
     normalized_cities = [city.lower().replace(" ", "") for city in cities]
 
     # Filter city data for the matched country
-    city_details = [city for city in current_data.values() if city['city_name'].lower().split(',')[0] in normalized_cities]
+    city_details_list = [
+        city for city in current_data.values()
+        if city['city_name'].lower().split(',')[0] in normalized_cities
+    ]
 
-    # print(f"Normalized matched cities for {country_name}: {normalized_cities}")
-    # print(f"City details found after normalization: {city_details}")
-
-    if not city_details:
-        return {"error": f"No city data found for country: {country_name}"}
+    if not city_details_list:
+        return Response(
+            {"error": f"No city data found for country: {country_name}"},
+            status=status.HTTP_404_NOT_FOUND,
+        )
 
     # Get country-level averages from country_details.json
     country_data = None
@@ -69,7 +81,10 @@ def get_country_details(request):
             break
 
     if not country_data:
-        return {"error": f"No country-level data found for: {country_name}"}
+        return Response(
+            {"error": f"No country-level data found for: {country_name}"},
+            status=status.HTTP_404_NOT_FOUND,
+        )
 
     # Prepare the output structure
     result = {
@@ -88,13 +103,15 @@ def get_country_details(request):
         "lppi_label": ["Average"],
     }
 
-    # Function to calculate top cities for an index
     def calculate_top_cities(index_name):
         indexes = sorted(
-            [(float(city[index_name]), city['city_name'].split(',')[0]) for city in city_details if index_name in city],
-            reverse=True
+            [
+                (float(city[index_name]), city['city_name'].split(',')[0])
+                for city in city_details_list
+                if index_name in city
+            ],
+            reverse=True,
         )
-
         top_values = [value for value, _ in indexes[:4]]
         top_labels = [name for _, name in indexes[:4]]
 
@@ -105,28 +122,32 @@ def get_country_details(request):
 
         return top_values, top_labels
 
-    # Process each index for top cities
     for key in ["coi", "ri", "coipri", "gi", "rpi", "lppi"]:
         top_values, top_labels = calculate_top_cities(key)
-        result[key].extend(top_values)  # Append top 4 values to country-level average
-        result[f"{key}_label"].extend(top_labels)  # Append top 4 city labels
+        result[key].extend(top_values)
+        result[f"{key}_label"].extend(top_labels)
 
     return Response(result)
 
+
 @api_view(['POST'])
 def get_city_all_years(request):
-    a=request.data
-    city_name=a['city_name']
+    city_name = request.data.get('city_name', '').strip()
+    if not city_name:
+        return Response(
+            {"error": "city_name is required."},
+            status=status.HTTP_400_BAD_REQUEST,
+        )
+
     data_sources = {
-    "current": current_data,
-    "2023": data_2023,
-    "2022": data_2022,
-    "2021": data_2021,
-    "2020": data_2020,
+        "current": current_data,
+        "2023": data_2023,
+        "2022": data_2022,
+        "2021": data_2021,
+        "2020": data_2020,
     }
 
     city_name_lower = city_name.lower()
-    print(city_name_lower)
     result = {"name": None, "Index": {}}
     all_years = {}
 
@@ -134,13 +155,19 @@ def get_city_all_years(request):
     for year, data in data_sources.items():
         matched_city = next(
             (city for city in data.values() if city_name_lower in city["city_name"].lower()),
-            None
+            None,
         )
         all_years[year] = matched_city
 
-        # Set the city name if not already set
         if matched_city and not result["name"]:
             result["name"] = matched_city["city_name"]
+
+    # If no year matched, the city doesn't exist in our data
+    if result["name"] is None:
+        return Response(
+            {"error": f"No data found for city: {city_name}"},
+            status=status.HTTP_404_NOT_FOUND,
+        )
 
     # Populate index data for all specified keys
     for key in ["coi", "ri", "coipri", "gi", "rpi", "lppi"]:
@@ -150,4 +177,3 @@ def get_city_all_years(request):
         ]
 
     return Response(result)
-

@@ -1,347 +1,283 @@
-import { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import city_data from '../../backend/json/list_of_cities.json';
-import BarChart from './Components/BarChart';
-import LineChart from './Components/LIneChart';
-import PieChart from './Components/PieChart';
-import DoughnutChart from './Components/DoughnutChart';
-import BubbleChart from './Components/BubbleChart';
-import { Plus, X, TrendingUp, MapPin, Search, BarChart3, PieChart as PieChartIcon, LineChart as LineChartIcon, DollarSign, Home, ShoppingCart, Coffee, Wallet } from 'lucide-react';
+import {
+  BarChart3,
+  TrendingUp,
+  Sliders,
+  Globe2,
+  AlertCircle,
+  X,
+} from 'lucide-react';
+
+import Header from './components/Header';
+import SearchBar from './components/SearchBar';
+import ActiveComparisons from './components/ActiveComparisons';
+import InsightsBanner from './components/InsightsBanner';
+import MetricScorecard from './components/MetricScorecard';
+import HistoricalTrendChart from './components/HistoricalTrendChart';
+import ComparisonBarChart from './components/ComparisonBarChart';
+import CountryCityBreakdown from './components/CountryCityBreakdown';
+import EmptyState from './components/EmptyState';
+
+const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8000';
 
 const App = () => {
-  const [columns, setColumns] = useState([{ id: 1, inputValue: '', data: null, loading: false }]);
-  const [nextId, setNextId] = useState(2);
+  const [locations, setLocations] = useState([]);
+  const [baselineIndex, setBaselineIndex] = useState(-1);
+  const [activeTab, setActiveTab] = useState('scorecard');
+  const [isLoading, setIsLoading] = useState(false);
+  const [errorMessage, setErrorMessage] = useState(null);
 
-  // Function to add a new column
-  const addColumn = () => {
-    const newColumn = {
-      id: nextId,
-      inputValue: '',
-      data: null,
-      loading: false
-    };
-    setColumns([...columns, newColumn]);
-    setNextId(nextId + 1);
-  };
+  const hasCountry = locations.some((l) => !l.isCity);
+  const hasCity = locations.some((l) => l.isCity);
 
-  // Function to remove a column
-  const removeColumn = (id) => {
-    if (columns.length > 1) {
-      setColumns(columns.filter(col => col.id !== id));
+  useEffect(() => {
+    if (activeTab === 'country' && !hasCountry) {
+      setActiveTab('scorecard');
+    }
+  }, [hasCountry, activeTab]);
+
+  const fetchLocationData = async (locationInfo) => {
+    const isCity = locationInfo.type === 'city';
+    const endpoint = isCity ? `${API_BASE}/api/post_city/` : `${API_BASE}/api/post_country/`;
+    const payload = isCity
+      ? { city_name: locationInfo.name }
+      : { country_name: locationInfo.name };
+
+    try {
+      const res = await axios.post(endpoint, payload);
+      return {
+        id: `${locationInfo.type}_${locationInfo.name}_${Date.now()}`,
+        name: locationInfo.name,
+        fullName: locationInfo.fullName || res.data.name || locationInfo.name,
+        isCity,
+        rawData: res.data,
+      };
+    } catch (err) {
+      const msg = err.response?.data?.error || `Failed to fetch data for ${locationInfo.name}.`;
+      throw new Error(msg);
     }
   };
 
-  // Function to update input value for a specific column
-  const updateInputValue = (id, value) => {
-    setColumns(columns.map(col => 
-      col.id === id ? { ...col, inputValue: value } : col
-    ));
-  };
+  const handleAddLocation = async (locInfo) => {
+    if (locations.some((l) => l.name.toLowerCase() === locInfo.name.toLowerCase())) {
+      return;
+    }
+    if (locations.length >= 4) {
+      setErrorMessage('You can compare up to 4 locations at a time. Remove one to add another.');
+      return;
+    }
 
-  // Function to set loading state for a specific column
-  const setColumnLoading = (id, loading) => {
-    setColumns(columns.map(col => 
-      col.id === id ? { ...col, loading } : col
-    ));
-  };
+    setIsLoading(true);
+    setErrorMessage(null);
 
-  // Function to generate chart data for a specific column
-  const generateChartData = (apiData, location, isCity) => {
-    const data = isCity ? apiData.Index : apiData;
-    const labels = isCity ? [2024, 2023, 2022, 2021, 2020] : (apiData.coi_label || [2024, 2023, 2022, 2021, 2020]);
-
-    return {
-      coiData: {
-        labels: labels,
-        datasets: [{
-          label: `Cost of Living Index - ${location}`,
-          data: data.coi,
-          backgroundColor: ['#f72585', '#7209b7', '#3a0ca3', '#4361ee', '#4cc9f0'],
-        }]
-      },
-      riData: {
-        labels: labels,
-        datasets: [{
-          label: `Rent Index - ${location}`,
-          data: data.ri,
-          backgroundColor: isCity ? ['#3D5300', '#ABBA7C', '#FFE31A', '#F09319', '#37AFE1'] : ['#13d1ff', '#19a5ff', '#fee719', '#fe4f19', '#f00c18'],
-        }]
-      },
-      coipriData: {
-        labels: labels,
-        datasets: [{
-          borderColor: isCity ? '#3a0ca3' : '#f72585',
-          label: `Cost of Living Plus Rent Index - ${location}`,
-          data: data.coipri,
-          backgroundColor: isCity ? ['#04e762', '#f5b700', '#dc0073', '#008bf8', '#89fc00'] : ['#feee00', '#fcd116', '#df00ff', '#9f00ff', '#8f03ff'],
-        }]
-      },
-      giData: {
-        labels: labels,
-        datasets: [{
-          indexAxis: 'y',
-          label: `Groceries Index - ${location}`,
-          data: data.gi,
-          backgroundColor: isCity ? ['#feee00', '#fcd116', '#df00ff', '#9f00ff', '#8f03ff'] : ['#04e762', '#f5b700', '#dc0073', '#008bf8', '#89fc00'],
-        }]
-      },
-      rpiData: {
-        labels: labels,
-        datasets: [{
-          label: `Restaurant Price Index - ${location}`,
-          data: data.rpi,
-          backgroundColor: isCity ? ['#13d1ff', '#19a5ff', '#fee719', '#fe4f19', '#f00c18'] : ['#3D5300', '#ABBA7C', '#FFE31A', '#F09319', '#37AFE1'],
-        }]
-      },
-      lppiData: {
-        labels: labels,
-        datasets: [{
-          label: `Local Purchasing Power Index - ${location}`,
-          data: data.lppi,
-          backgroundColor: isCity ? ['#ffff00', '#aaff00', '#00ff15', '#00ffff', '#0095ff'] : ['#f72585', '#7209b7', '#3a0ca3', '#4361ee', '#4cc9f0'],
-        }]
-      }
-    };
-  };
-
-  // Function to handle API request for a specific column
-  const handleSubmit = (columnId) => {
-    const column = columns.find(col => col.id === columnId);
-    if (!column.inputValue) return;
-
-    setColumnLoading(columnId, true);
-
-    const a = Object.values(city_data);
-    const b = column.inputValue;
-    const c = b.charAt(0).toUpperCase() + b.substring(1).toLowerCase();
-    
-    if (a.includes(c)) {
-      // City API call
-      axios
-        .post('http://localhost:8000/api/post_city/', {
-          city_name: column.inputValue
-        })
-        .then((res) => {
-          const chartData = generateChartData(res.data, column.inputValue, true);
-          setColumns(columns.map(col => 
-            col.id === columnId ? { 
-              ...col, 
-              data: {
-                location: column.inputValue,
-                isCity: true,
-                rawData: res.data,
-                charts: chartData
-              },
-              loading: false
-            } : col
-          ));
-        })
-        .catch((err) => {
-          console.error(err);
-          setColumnLoading(columnId, false);
-        });
-    } else {
-      // Country API call
-      axios
-        .post('http://localhost:8000/api/post_country/', {
-          country_name: column.inputValue
-        })
-        .then((res) => {
-          const chartData = generateChartData(res.data, column.inputValue, false);
-          setColumns(columns.map(col => 
-            col.id === columnId ? { 
-              ...col, 
-              data: {
-                location: column.inputValue,
-                isCity: false,
-                rawData: res.data,
-                charts: chartData
-              },
-              loading: false
-            } : col
-          ));
-        })
-        .catch((err) => {
-          console.error(err);
-          setColumnLoading(columnId, false);
-        });
+    try {
+      const newLoc = await fetchLocationData(locInfo);
+      setLocations((prev) => [...prev, newLoc]);
+    } catch (err) {
+      setErrorMessage(err.message);
+    } finally {
+      setIsLoading(false);
     }
   };
 
-  const handleKeyPress = (e, columnId) => {
-    if (e.key === 'Enter') {
-      handleSubmit(columnId);
+  const handleRemoveLocation = (name) => {
+    setLocations((prev) => {
+      const filtered = prev.filter((l) => l.name !== name);
+      return filtered;
+    });
+    setBaselineIndex(-1);
+  };
+
+  const handleClearAll = () => {
+    setLocations([]);
+    setBaselineIndex(-1);
+    setErrorMessage(null);
+  };
+
+  const handleSelectPreset = async (preset) => {
+    setIsLoading(true);
+    setErrorMessage(null);
+
+    try {
+      const promises = preset.locations.map((loc) => fetchLocationData(loc));
+      const loaded = await Promise.all(promises);
+      setLocations(loaded);
+      setBaselineIndex(-1);
+      setActiveTab('scorecard');
+    } catch (err) {
+      setErrorMessage(err.message || 'Failed to load comparison pack.');
+    } finally {
+      setIsLoading(false);
     }
   };
 
-  const chartConfigs = [
-    { key: 'coiData', title: 'Cost of Living Index', icon: TrendingUp, color: 'from-blue-500 to-purple-600' },
-    { key: 'riData', title: 'Rent Index', icon: Home, color: 'from-green-500 to-teal-600' },
-    { key: 'coipriData', title: 'Cost of Living Plus Rent Index', icon: DollarSign, color: 'from-purple-500 to-pink-600' },
-    { key: 'giData', title: 'Groceries Index', icon: ShoppingCart, color: 'from-orange-500 to-red-600' },
-    { key: 'rpiData', title: 'Restaurant Price Index', icon: Coffee, color: 'from-teal-500 to-cyan-600' },
-    { key: 'lppiData', title: 'Local Purchasing Power Index', icon: Wallet, color: 'from-indigo-500 to-blue-600' }
-  ];
-
-  const chartComponents = {
-    coiData: BarChart,
-    riData: DoughnutChart,
-    coipriData: LineChart,
-    giData: BarChart,
-    rpiData: BubbleChart,
-    lppiData: PieChart
-  };
+  const selectedCountry = locations.find((l) => !l.isCity);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
-      {/* Header */}
-      <div className="bg-white/80 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-10">
-        <div className="max-w-7xl mx-auto px-6 py-4">
-          <div className="flex justify-between items-center">
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl flex items-center justify-center">
-                <TrendingUp className="w-6 h-6 text-white" />
-              </div>
-              <div>
-                <h1 className="text-2xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">
-                  Cost of Living Analyzer
-                </h1>
-                <p className="text-sm text-gray-500">Compare living costs across cities and countries</p>
-              </div>
-            </div>
-            <button
-              onClick={addColumn}
-              className="group px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200 flex items-center space-x-2"
-            >
-              <Plus className="w-5 h-5 group-hover:rotate-90 transition-transform duration-200" />
-              <span className="font-medium">Add Comparison</span>
-            </button>
-          </div>
-        </div>
-      </div>
+    <div className="min-h-screen bg-[#F5F5F7] text-[#1D1D1F] flex flex-col font-sans selection:bg-[#0071E3]/15 selection:text-[#0071E3]">
+      {/* Apple-style Frosted Header */}
+      <Header
+        onSelectPreset={handleSelectPreset}
+        onReset={handleClearAll}
+        activeCount={locations.length}
+      />
 
       {/* Main Content */}
-      <div className="max-w-7xl mx-auto px-6 py-8">
-        <div className="grid gap-8" style={{ gridTemplateColumns: `repeat(${columns.length}, 1fr)` }}>
-          {columns.map((column, index) => (
-            <div 
-              key={column.id} 
-              className="bg-white/70 backdrop-blur-sm rounded-2xl shadow-xl border border-white/20 overflow-hidden transform hover:shadow-2xl transition-all duration-300"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              {/* Column Header */}
-              <div className="bg-gradient-to-r from-gray-50 to-white p-6 border-b border-gray-100">
-                <div className="flex justify-between items-center">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg flex items-center justify-center">
-                      <MapPin className="w-4 h-4 text-white" />
-                    </div>
-                    <h2 className="text-xl font-semibold text-gray-800">
-                      {column.data ? column.data.location : 'Enter Location'}
-                    </h2>
-                    {column.data && (
-                      <span className="px-3 py-1 bg-gradient-to-r from-green-100 to-emerald-100 text-green-700 text-sm rounded-full font-medium">
-                        {column.data.isCity ? 'City' : 'Country'}
-                      </span>
-                    )}
-                  </div>
-                  {columns.length > 1 && (
-                    <button
-                      onClick={() => removeColumn(column.id)}
-                      className="w-8 h-8 text-gray-400 hover:text-red-500 hover:bg-red-50 rounded-lg flex items-center justify-center transition-all duration-200"
-                    >
-                      <X className="w-4 h-4" />
-                    </button>
-                  )}
-                </div>
-              </div>
-
-              {/* Input Section */}
-              <div className="p-6 border-b border-gray-100">
-                <div className="flex items-center space-x-3">
-                  <div className="relative flex-1">
-                    <Search className="w-5 h-5 text-gray-400 absolute left-3 top-1/2 transform -translate-y-1/2" />
-                    <input
-                      type="text"
-                      placeholder="Enter a city or country name..."
-                      value={column.inputValue}
-                      onChange={(e) => updateInputValue(column.id, e.target.value)}
-                      onKeyPress={(e) => handleKeyPress(e, column.id)}
-                      className="w-full pl-10 pr-4 py-3 border border-gray-200 rounded-xl shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 bg-white/80"
-                      disabled={column.loading}
-                    />
-                  </div>
-                  <button
-                    onClick={() => handleSubmit(column.id)}
-                    disabled={column.loading || !column.inputValue}
-                    className="px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed transform hover:-translate-y-0.5 transition-all duration-200 flex items-center space-x-2"
-                  >
-                    {column.loading ? (
-                      <>
-                        <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-                        <span>Loading...</span>
-                      </>
-                    ) : (
-                      <>
-                        <Search className="w-4 h-4" />
-                        <span>Analyze</span>
-                      </>
-                    )}
-                  </button>
-                </div>
-              </div>
-
-              {/* Charts */}
-              {column.data && (
-                <div className="p-6 space-y-6">
-                  {chartConfigs.map((config) => {
-                    const ChartComponent = chartComponents[config.key];
-                    const IconComponent = config.icon;
-                    
-                    return (
-                      <div key={config.key} className="group">
-                        <div className="bg-gradient-to-r from-gray-50 to-white p-4 rounded-xl border border-gray-100 hover:shadow-md transition-all duration-200">
-                          <div className="flex items-center space-x-3 mb-4">
-                            <div className={`w-8 h-8 bg-gradient-to-r ${config.color} rounded-lg flex items-center justify-center`}>
-                              <IconComponent className="w-4 h-4 text-white" />
-                            </div>
-                            <h3 className="text-lg font-semibold text-gray-800">{config.title}</h3>
-                          </div>
-                          <div className="bg-white rounded-lg border border-gray-100 p-4">
-                            <ChartComponent chartData={column.data.charts[config.key]} />
-                          </div>
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
-              )}
-
-              {/* Empty State */}
-              {!column.data && !column.loading && (
-                <div className="p-12 text-center">
-                  <div className="w-16 h-16 bg-gradient-to-r from-gray-100 to-gray-200 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <MapPin className="w-8 h-8 text-gray-400" />
-                  </div>
-                  <h3 className="text-lg font-medium text-gray-600 mb-2">Ready to analyze</h3>
-                  <p className="text-gray-500">Enter a location above and click "Analyze" to view cost of living data</p>
-                </div>
-              )}
-
-              {/* Loading State */}
-              {column.loading && (
-                <div className="p-12 text-center">
-                  <div className="w-16 h-16 bg-gradient-to-r from-blue-100 to-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <div className="w-8 h-8 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
-                  </div>
-                  <h3 className="text-lg font-medium text-gray-600 mb-2">Analyzing data...</h3>
-                  <p className="text-gray-500">Please wait while we fetch cost of living information</p>
-                </div>
-              )}
+      <main className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 flex-1 space-y-6">
+        
+        {/* Soft Pastel Error Alert */}
+        {errorMessage && (
+          <div className="bg-red-50 border border-red-200 text-red-800 px-4 py-3 rounded-2xl flex items-center justify-between text-sm shadow-sm">
+            <div className="flex items-center space-x-2.5">
+              <AlertCircle className="w-5 h-5 text-red-500 shrink-0" />
+              <span className="font-medium">{errorMessage}</span>
             </div>
-          ))}
+            <button
+              onClick={() => setErrorMessage(null)}
+              className="text-red-500 hover:text-red-700 p-1"
+            >
+              <X className="w-4 h-4" />
+            </button>
+          </div>
+        )}
+
+        {/* Search Bar */}
+        <section>
+          <SearchBar
+            onAddLocation={handleAddLocation}
+            activeLocations={locations}
+            isLoading={isLoading}
+          />
+        </section>
+
+        {/* Active Locations Strip */}
+        {locations.length > 0 && (
+          <section>
+            <ActiveComparisons
+              locations={locations}
+              onRemoveLocation={handleRemoveLocation}
+              onClearAll={handleClearAll}
+              baselineIndex={baselineIndex}
+              onSetBaseline={setBaselineIndex}
+            />
+          </section>
+        )}
+
+        {/* Insights Takeaway Banner */}
+        {locations.length > 0 && (
+          <section>
+            <InsightsBanner
+              locations={locations}
+              baselineIndex={baselineIndex}
+            />
+          </section>
+        )}
+
+        {/* Apple Segmented View Switcher & Views */}
+        {locations.length > 0 && (
+          <section className="space-y-6">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+              {/* Apple Segmented Control */}
+              <div className="bg-[#E5E5EA]/70 p-1 rounded-2xl flex items-center space-x-1 overflow-x-auto">
+                <button
+                  onClick={() => setActiveTab('scorecard')}
+                  className={`flex items-center space-x-1.5 py-2 px-3.5 rounded-xl text-xs sm:text-sm transition-all whitespace-nowrap ${
+                    activeTab === 'scorecard'
+                      ? 'bg-white text-[#1D1D1F] font-semibold shadow-sm'
+                      : 'text-[#86868B] hover:text-[#1D1D1F] font-medium'
+                  }`}
+                >
+                  <BarChart3 className="w-4 h-4" />
+                  <span>Metric Scorecards</span>
+                </button>
+
+                {hasCity && (
+                  <button
+                    onClick={() => setActiveTab('trends')}
+                    className={`flex items-center space-x-1.5 py-2 px-3.5 rounded-xl text-xs sm:text-sm transition-all whitespace-nowrap ${
+                      activeTab === 'trends'
+                        ? 'bg-white text-[#1D1D1F] font-semibold shadow-sm'
+                        : 'text-[#86868B] hover:text-[#1D1D1F] font-medium'
+                    }`}
+                  >
+                    <TrendingUp className="w-4 h-4" />
+                    <span>5-Year Trends</span>
+                  </button>
+                )}
+
+                <button
+                  onClick={() => setActiveTab('breakdown')}
+                  className={`flex items-center space-x-1.5 py-2 px-3.5 rounded-xl text-xs sm:text-sm transition-all whitespace-nowrap ${
+                    activeTab === 'breakdown'
+                      ? 'bg-white text-[#1D1D1F] font-semibold shadow-sm'
+                      : 'text-[#86868B] hover:text-[#1D1D1F] font-medium'
+                  }`}
+                >
+                  <Sliders className="w-4 h-4" />
+                  <span>Category Breakdown</span>
+                </button>
+
+                {hasCountry && (
+                  <button
+                    onClick={() => setActiveTab('country')}
+                    className={`flex items-center space-x-1.5 py-2 px-3.5 rounded-xl text-xs sm:text-sm transition-all whitespace-nowrap ${
+                      activeTab === 'country'
+                        ? 'bg-white text-emerald-800 font-semibold shadow-sm'
+                        : 'text-[#86868B] hover:text-[#1D1D1F] font-medium'
+                    }`}
+                  >
+                    <Globe2 className="w-4 h-4 text-emerald-600" />
+                    <span>Country Breakdown</span>
+                  </button>
+                )}
+              </div>
+
+              <div className="hidden sm:flex items-center space-x-1.5 text-xs text-[#86868B]">
+                <span className="w-2 h-2 rounded-full bg-emerald-500" />
+                <span>Comparing {locations.length} location{locations.length > 1 ? 's' : ''}</span>
+              </div>
+            </div>
+
+            {/* Tab Views */}
+            {activeTab === 'scorecard' && (
+              <MetricScorecard
+                locations={locations}
+                baselineIndex={baselineIndex}
+              />
+            )}
+
+            {activeTab === 'trends' && (
+              <HistoricalTrendChart locations={locations} />
+            )}
+
+            {activeTab === 'breakdown' && (
+              <ComparisonBarChart locations={locations} />
+            )}
+
+            {activeTab === 'country' && selectedCountry && (
+              <CountryCityBreakdown countryLocation={selectedCountry} />
+            )}
+          </section>
+        )}
+
+        {/* Empty State / Welcome Screen */}
+        {locations.length === 0 && !isLoading && (
+          <EmptyState onSelectPreset={handleSelectPreset} />
+        )}
+      </main>
+
+      {/* Footer */}
+      <footer className="border-t border-black/[0.04] bg-white/40 py-6 mt-12 text-xs text-[#86868B]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+          <p>
+            Data source: Numbeo open dataset (2020–2024). Baseline: New York City = 100.0.
+          </p>
+          <p className="font-mono text-slate-500">
+            Built with React, Vite & Django REST Framework
+          </p>
         </div>
-      </div>
+      </footer>
     </div>
   );
 };
